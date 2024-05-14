@@ -1,25 +1,28 @@
 #include<iostream>
+#include<string>
 #include<iomanip>
 using namespace std;
 int main()
 {
-double A=100;
-double B=2001.5251;
-double C=201455.2646;
-//We can use setbase(16) here instead of hex
-//formatting
-//cout<<hex<<left<<showbase<<nouppercase;
-//actual printed part
-//cout<<(long long)A<<endl;
-//We can use dec here instead of setbase(10)
-//formatting
-//cout<<setbase(10)<<right<<setw(15)<<setfill('_')<<showpos<<fixed<<setprecision(2);
-//actual printed part
-//cout<<B<<endl;
-//formatting
-cout<<scientific<<uppercase<<noshowpos<<setprecision(9);
-//actual printed part
-cout<<C<<endl;
-
-
+	int i,n;
+	string name;
+	float number, gross_amount, amount_donated, net_sale;
+	cout<<"enter number of tickets\n"<<endl;
+	cin>>n;
+	for(i=0;i<n;i++)
+	{
+		cout<<"Movie Name......................"<<setw(2);
+		cin>>name;
+		cout<<"Number of Tickets Sold.........."<<setw(2);
+		cin>>number;
+		cout<<"Gross Amount...................."<<setw(2);
+		cin>>gross_amount;
+		cout<<"Amount Donated.................."<<setw(2);
+		cin>>amount_donated;
+		cout<<"Net Sale........................"<<setw(2);
+		cin>>net_sale;
+		cout<<endl;	
+	}
+	
 }
+
